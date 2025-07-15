@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/OpenSans_Condensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 300;
+    src: url(../fonts/OpenSans_Condensed-Light.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 600;
+    src: url(../fonts/OpenSans_Condensed-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 900;
+    src: url(../fonts/OpenSans_Condensed-ExtraBold.ttf);
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.logoImg {
+    height: 70px;
+    padding: 10px;
+}
+
+.searchHeaderIiconImg {
+    height: 60px;
+    padding: 10px;
+    margin-right: 0px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+body {
+    font-family: "opensans", Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+}
+
+header>.container {
+    padding: 40px 20px;
+}
+
+header .container .menu a {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #4b4b4e;
+    margin: 0px 20px;
+}
+
+header .container .menu a:hover,
+header .container .menu a.active {
+    color: #dfa52b;
+    font-weight: 600;
+    padding-bottom: 7px;
+    border-bottom: 3px solid rgb(30, 22, 70);
+}
+
+header form div {
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 320px;
+}
+
+header form div input[type="text"] {
+    border: none;
+    margin-right: 10px;
+
+}
+
+header form div input[type="submit"] {
+    background: url(../images/main/cart-icon.png);
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    border: none;
+}
+
+header form div input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+header form div input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+header .cart {
+    align-items: flex-start;
+}
+
+header .cart div p {
+    font-size: 0.938em;
+    color: #4b4b4e;
+}
+
+header .cart div a {
+    font-size: 0.750em;
+    color: #dfa52b;
+}
+
+
+
+
+footer  {
+    padding: 50px 0px 20px 0px;
+    background-color: #4b4b4e;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: aliceblue;
+}
+
+body>footer>div.container.d-flex>div.left>figure>figcaption {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: white;
+}
+
+body>footer>div.container.d-flex>div.left.d-flex>nav a {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+
+body>footer>div.container.d-flex>div.left.d-flex>nav a:hover {
+    cursor: pointer;
+    color: #dfa52b;
+    text-decoration: underline 2px;
+}
+
+/* body>footer>div.container.d-flex {
+    height: 170px;
+} */
+
+.reg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.reg a {
+    font-size: 12px;
+}
+
+body>footer>div.container.d-flex>div.left {
+    margin-left: 20px;
+}
+
+figure {
+    width: 100px;
+    margin-right: 100px;
+}
+
+body>footer {
+    vertical-align: middle;
+}
+
+footer .container {
+    align-items: flex-start;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex {
+    display: block;
+}
+
+body > footer > div.container.d-flex > div.rigth {
+    margin-right: 30px ;
+    width: 450px;
+}
+
+footer .social-logo .logoImg {
+    height: 50px;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > div > div:hover {
+    background-color: #dfa52b;
+}
+
+body > footer > div.container.d-flex > div.rigth > a {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+body > footer > div.container.d-flex > div.rigth > form,
+body > footer > div.container.d-flex > div.rigth > a,
+body > footer > div.container.d-flex > div.rigth > div {
+    padding: 10px 0px;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > div > .box {
+    padding: 0px 10px;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > form > div > input[type=text] {
+    border: none;
+    margin-right: 10px;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > div > div.box.inst {
+    background-color: none;
+    background: url() no-repeat;
+    background-size: cover;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > div > .box:hover {
+    background-color: #dfa52b;
+    border-radius: 50px;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > form {
+    justify-content: left;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > form input[type='text'] {
+    padding: 0px;
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+body > footer > div.container.d-flex > div.rigth.d-flex > form input[type='submit'] {
+    width: 20px;
+    height: 20px; 
+    background: url(../images/main/cart-icon.png) no-repeat;
+    background-size: cover;
+    border: none;
+}

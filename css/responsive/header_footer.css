@@ -1,0 +1,104 @@
+/* 
+>= 1220
+992 - 1199
+768 - 991
+576 - 768
+460 - 576
+414 - 460
+375 - 414
+320 - 375
+*/
+
+
+@media screen and (max-width:991px) {
+    header > .container {
+        flex-wrap: wrap; 
+    }
+
+    body > footer > div.container.d-flex > div.rigth {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width:933px) {
+    header > .container {
+        justify-content: center; 
+    }
+
+    header .container .menu a {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body > footer > div.container {
+        flex-wrap: wrap;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header .container .d-flex .menu a {
+        padding: 0px;
+    }
+
+    header .logoImg {
+        margin: 0px 50px;
+    }
+
+    header .container form .d-flex {
+        width: 250px;
+    }
+
+    header .container div {
+        margin-top: 7px;
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    header .container .menu a {
+    margin: 13px;
+    }
+
+    header .container form .d-flex {
+        width: 200px;
+    }
+
+    header form div input[type="text"] {
+        margin-right: -30px;
+    }
+
+    body > footer > div.container.d-flex > div.left.d-flex > figure {
+        margin-right:50px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    header .container .menu a {
+        margin: 10px
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    header .container .menu a {
+        margin: 3px
+    }
+
+    header .container form .d-flex {
+        width: 150px;
+    }
+
+    header form div input[type="submit"] {
+        display: none;
+    }
+
+    body > footer > div.container.d-flex > div.left.d-flex > figure {
+        margin: 20px;
+
+}
