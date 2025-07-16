@@ -1,15 +1,65 @@
-// [] --> []
-// ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+function add(a, b) {
+  //блок выравнивания по длине
 
-let array = ["a", "b", "c"];
+  console.log("a.length = ", a.length);
+  console.log("b.length = ", b.length);
+  console.log(b.length - a.length);
 
-var number = function (array) {
-  for (let i = 0; i < array.length; i++) {
-    let curResult = i + 1 + ": " + array[i];
-    array[i] = curResult.toString();
+  let dif =  Math.abs(a.length - b.length)
+
+  if (a.length > b.length) {
+    for (let i = 0; i < dif; i++) {
+      b = "0" + b;
+    }
+  } else if (a.length < b.length) {
+    for (let i = 0; i < dif; i++) {
+      a = "0" + a;
+    }
   }
 
-  return array;
-};
+  console.log("a = ", a);
+  console.log("b = ", b);
 
-console.log(number(array));
+  // преобразования для удобства
+  a = [...a].reverse();
+  b = [...b].reverse();
+
+  // блок сложения
+  let result = [];
+  let counter = 0;
+
+  for (let i = 0; i <= a.length - 1; i++) {
+    // console.log ("counter = ", counter)
+    let currentSum = Number(a[i]) + Number(b[i]) + counter;
+    // console.log ("currentsum = ", currentSum)
+
+    if (currentSum < 10) {
+      counter = 0;
+      result.push(currentSum);
+    } else {
+      if (i == a.length - 1) {
+        result.push(currentSum - 10);
+        result.push(1);
+      } else {
+        result.push(currentSum - 10);
+        counter = 1;
+      }
+    }
+  }
+
+  //return resultNotReverse
+  return [...result].reverse().join("");
+}
+
+// console.log(add("1", "1"));
+// console.log("-----");
+console.log(add("12", "456"));
+console.log("-----");
+
+// console.log(add("123", "45"));
+// console.log("-----");
+console.log(add("63829983432984289347293874", "90938498237058927340892374089"));
+console.log("-----");
+
+// console.log(add("888", "222"));
+// console.log("-----");
