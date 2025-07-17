@@ -16,10 +16,10 @@ function add(a, b) {
       a = "0" + a;
     }
   }
-
+  
   console.log("a = ", a);
   console.log("b = ", b);
-
+  
   // преобразования для удобства
   a = [...a].reverse();
   b = [...b].reverse();
@@ -47,16 +47,16 @@ function add(a, b) {
     }
   }
 
-  //return resultNotReverse
+  //return resultNotRevers
   return [...result].reverse().join("");
 }
 
-// console.log(add("1", "1"));
+// console.log(add("1", "1"))
 // console.log("-----");
 console.log(add("12", "456"));
 console.log("-----");
 
-// console.log(add("123", "45"));
+// console.log(add("123", "45"))
 // console.log("-----");
 console.log(add("63829983432984289347293874", "90938498237058927340892374089"));
 console.log("-----");
